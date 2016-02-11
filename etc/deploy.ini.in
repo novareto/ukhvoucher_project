@@ -25,6 +25,7 @@ use = egg:ukhvoucher#app
 name = ukhvoucher
 zcml = ${zcml:output}
 session_key = session.key
+dsn = sqlite:////tmp/ukhvoucher.db
 #environ_key = zodb.env
 #conf =
 #  <zodb test>
