@@ -25,18 +25,7 @@ use = egg:ukhvoucher#app
 name = ukhvoucher
 zcml = ${zcml:output}
 session_key = session.key
-dsn = sqlite:////tmp/ukhvoucher.db
-#environ_key = zodb.env
-#conf =
-#  <zodb test>
-#    <blobstorage>
-#       blob-dir ${settings:blob_dir}
-#      <filestorage>
-#        path ${settings:data_fs_dir}/Data.fs
-#      </filestorage>
-#    </blobstorage>
-#  </zodb>
-#dsn = ${settings:dsn}
+dsn = ${settings:dsn} 
 
 [server:main]
 use = egg:Paste#http
