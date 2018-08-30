@@ -1,0 +1,13 @@
+.Python
+develop-eggs/
+parts/
+var/
+dogpile_data
+eggs
+bin/
+include/
+lib/
+pip-selfcheck.json
+src/
+.installed.cfg
+.mr.developer.cfg
