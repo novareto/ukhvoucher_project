@@ -26,6 +26,7 @@ name = ukhvoucher
 zcml = ${zcml:output}
 session_key = session.key
 dsn = ${settings:dsn} 
+root = ${buildout:directory}
 
 [server:main]
 use = egg:Paste#http
