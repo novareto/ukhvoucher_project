@@ -1,5 +1,5 @@
 [pipeline:main]
-pipeline = gzip session fanstatic ukhvoucher
+pipeline = gzip fanstatic ukhvoucher
 
 [filter:fanstatic]
 use = egg:fanstatic#fanstatic
@@ -8,11 +8,10 @@ versioning = true
 bottom = true
 minified = true
 
-[filter:session]
-use = egg:cromlech.wsgistate#file_session
-session_key = session.key
-session_cache = /tmp/ 
-
+#[filter:session]
+#use = egg:cromlech.wsgistate#file_session
+#session_key = session.key
+#session_cache = /tmp/ 
 
 [filter:gzip]
 use = egg:Paste#gzip
